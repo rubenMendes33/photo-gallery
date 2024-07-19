@@ -1,0 +1,26 @@
+.header{
+  padding-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--app-font);
+
+  mat-button-toggle-group{
+    border-color: black;
+    mat-button-toggle{
+    }
+  }
+}
+h1{
+  font-weight: 100;
+  font-family: var(--app-font);
+  font-size: 50px;
+}
+svg{
+  cursor: pointer;
+  user-select: none;
+}
+
+.dark{
+  fill: white;
+}

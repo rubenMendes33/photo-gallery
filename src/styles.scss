@@ -1,0 +1,63 @@
+:root {
+  --app-font: roboto, sans;
+  --header-height: 180px;
+}
+.dark-mode{
+  background-color: black;
+  color: white;
+}
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+app-root{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#fullheight{
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+app-header{
+  height: var(--header-height);
+}
+
+app-photos {
+  height: calc(100% - var(--header-height) - 1px);
+}
+
+
+
+
+//body{
+//  margin: 0;
+//  height: 100vh;
+//}
+//app-root{
+//  display: flex;
+//  flex-direction: column;
+//  height: 100vh;
+//}
+//
+//.dark-mode{
+//  background-color: black;
+//  color: white;
+//
+//}
+//app-header {
+//  height: 180px;
+//}
+//
+//router-outlet {
+//  flex: 1;
+//}
+

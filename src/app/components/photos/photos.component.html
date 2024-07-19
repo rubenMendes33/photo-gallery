@@ -1,0 +1,16 @@
+<div class="gallery" (scroll)="onScroll($event)">
+  <ng-container *ngIf="!showFavorites; else showFavorite">
+  <ng-container *ngFor="let photoId of photosIds$ | async; trackBy:photoId">
+      <div class="img-container">
+        <img [ngClass]="{'isFavorite':photoId | isFavorite :favoriteIds }"  src="https://picsum.photos/id/{{photoId}}/300/300" alt="{{photoId}}" (click)="addRemovePhotoToFavorites(photoId)" >
+      </div>
+    </ng-container>
+  </ng-container>
+  <ng-template #showFavorite>
+    <ng-container *ngFor="let favoriteId of favoriteIds; trackBy:favoriteId">
+      <img src="https://picsum.photos/id/{{favoriteId}}/300/300" alt="{{favoriteId}}" (click)="onPhotoDetail(favoriteId)" >
+    </ng-container>
+  </ng-template>
+
+
+</div>

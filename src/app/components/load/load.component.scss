@@ -1,0 +1,17 @@
+:host{
+  position: sticky;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-container{
+  width: 200px;
+  background: #40A2D8;
+  margin-bottom: 10px;
+  display: flex;
+  border: solid;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
